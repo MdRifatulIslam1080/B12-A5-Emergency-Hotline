@@ -34,19 +34,19 @@
         <div
           class="flex gap-1 md:gap-3 w-[80px] h-[32px] md:w-[123px] md:h-[52px] bg-[#41ff6a19] rounded-[50px] justify-center items-center"
         >
-          <h1 class="font-extrabold">0</h1>
+          <h1 class="font-extrabold" id="heartCount">0</h1>
           <img class="w-[26px] h-[23px]" src="./assets/heart.png" alt="" />
         </div>
         <div
           class="flex gap-1 md:gap-3 w-[80px] h-[32px] md:w-[123px] md:h-[52px] bg-[#41ff6a19] rounded-[50px] justify-center items-center"
         >
-          <h1 class="font-extrabold">100</h1>
+          <span class="font-extrabold" id="coins">100</span>
           <img class="w-[23px] h-[23px]" src="./assets/coin.png" alt="" />
         </div>
         <div
           class="flex w-[80px] h-[32px] md:w-[123px] md:h-[52px] bg-[#00A63E] text-white rounded-[50px] justify-center items-center"
         >
-          <h1>2 Copy</h1>
+          <h1><span>0</span> Copy</h1>
         </div>
       </div>
     </nav>
@@ -89,7 +89,7 @@
                 src="./assets/emergency.png"
                 alt=""
             /></span>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
           </div>
           <div class="py-3">
             <h2 class="text-[24px] font-bold">National Emergency Number</h2>
@@ -105,7 +105,10 @@
             >
               <i class="fa-regular fa-copy ml-2"></i> Copy
             </button>
-            <button class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1">
+            <button
+              id="call-btn-1"
+              class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1"
+            >
               <i class="fa-solid fa-phone mr-2"></i>Call
             </button>
           </div>
@@ -118,7 +121,7 @@
             >
               <img class="w-[32px] h-[32px]" src="./assets/police.png" alt=""
             /></span>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
           </div>
           <div class="py-3">
             <h2 class="text-[24px] font-bold">Police Helpline Number</h2>
@@ -135,7 +138,10 @@
             >
               <i class="fa-regular fa-copy ml-2"></i> Copy
             </button>
-            <button class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1">
+            <button
+              id="call-btn-2"
+              class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1"
+            >
               <i class="fa-solid fa-phone mr-2"></i>Call
             </button>
           </div>
@@ -151,7 +157,7 @@
                 src="./assets/fire-service.png"
                 alt=""
             /></span>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
           </div>
           <div class="py-3">
             <h2 class="text-[24px] font-bold">Fire Service Number</h2>
@@ -167,7 +173,10 @@
             >
               <i class="fa-regular fa-copy ml-2"></i> Copy
             </button>
-            <button class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1">
+            <button
+              id="call-btn-3"
+              class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1"
+            >
               <i class="fa-solid fa-phone mr-2"></i>Call
             </button>
           </div>
@@ -183,7 +192,7 @@
                 src="./assets/ambulance.png"
                 alt=""
             /></span>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
           </div>
           <div class="py-3">
             <h2 class="text-[24px] font-bold">Ambulance Service</h2>
@@ -199,7 +208,10 @@
             >
               <i class="fa-regular fa-copy ml-2"></i> Copy
             </button>
-            <button class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1">
+            <button
+              id="call-btn-4"
+              class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1"
+            >
               <i class="fa-solid fa-phone mr-2"></i>Call
             </button>
           </div>
@@ -215,7 +227,7 @@
                 src="./assets/emergency.png"
                 alt=""
             /></span>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
           </div>
           <div class="py-3">
             <h2 class="text-[24px] font-bold">Women & Child Helpline</h2>
@@ -231,7 +243,10 @@
             >
               <i class="fa-regular fa-copy ml-2"></i> Copy
             </button>
-            <button class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1">
+            <button
+              id="call-btn-5"
+              class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1"
+            >
               <i class="fa-solid fa-phone mr-2"></i>Call
             </button>
           </div>
@@ -247,7 +262,7 @@
                 src="./assets/emergency.png"
                 alt=""
             /></span>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
           </div>
           <div class="py-3">
             <h2 class="text-[24px] font-bold">Anti-Corruption Helpline</h2>
@@ -263,7 +278,10 @@
             >
               <i class="fa-regular fa-copy ml-2"></i> Copy
             </button>
-            <button class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1">
+            <button
+              id="call-btn-6"
+              class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1"
+            >
               <i class="fa-solid fa-phone mr-2"></i>Call
             </button>
           </div>
@@ -279,7 +297,7 @@
                 src="./assets/emergency.png"
                 alt=""
             /></span>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
           </div>
           <div class="py-3">
             <h2 class="text-[24px] font-bold">Electricity Helpline</h2>
@@ -297,7 +315,10 @@
             >
               <i class="fa-regular fa-copy ml-2"></i> Copy
             </button>
-            <button class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1">
+            <button
+              id="call-btn-7"
+              class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1"
+            >
               <i class="fa-solid fa-phone mr-2"></i>Call
             </button>
           </div>
@@ -310,7 +331,7 @@
             >
               <img class="w-[32px] h-[32px]" src="./assets/brac.png" alt=""
             /></span>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
           </div>
           <div class="py-3">
             <h2 class="text-[24px] font-bold">Brac Helpliner</h2>
@@ -326,7 +347,10 @@
             >
               <i class="fa-regular fa-copy ml-2"></i> Copy
             </button>
-            <button class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1">
+            <button
+              id="call-btn-8"
+              class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1"
+            >
               <i class="fa-solid fa-phone mr-2"></i>Call
             </button>
           </div>
@@ -342,7 +366,7 @@
                 src="./assets/Bangladesh-Railway.png"
                 alt=""
             /></span>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
           </div>
           <div class="py-3">
             <h2 class="text-[24px] font-bold">Bangladesh Railway Helpline</h2>
@@ -358,7 +382,10 @@
             >
               <i class="fa-regular fa-copy ml-2"></i> Copy
             </button>
-            <button class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1">
+            <button
+              id="call-btn-9"
+              class="bg-[#00A63E] w-3/4 text-white rounded-[6px] py-1"
+            >
               <i class="fa-solid fa-phone mr-2"></i>Call
             </button>
           </div>
@@ -379,5 +406,6 @@
         </div>
       </div>
     </section>
+    <script src="./js/script.js"></script>
   </body>
 </html>
