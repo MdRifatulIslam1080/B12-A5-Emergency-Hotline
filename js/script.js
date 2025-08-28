@@ -9,9 +9,15 @@ for (const icon of heartIcons) {
   });
 }
 
+// // toggling features
+// document.getElementById("call-btn-1").addEventListener("click", function () {
+//   handleToggle("call-history-parent");
+//   handleButtonToggle("call-btn-1");
+// });
+
 // call history
 
-const callHistory = [];
+let callHistory = [];
 
 // call-btn-1
 
@@ -34,17 +40,15 @@ document.getElementById("call-btn-1").addEventListener("click", function () {
     date: new Date().toLocaleTimeString(),
   };
   callHistory.push(data);
-});
-document.getElementById("call-btn-1").addEventListener("click", function () {
   const callHistoryData = document.getElementById("call-history-data");
   callHistoryData.innerText = "";
   for (const history of callHistory) {
     const div = document.createElement("div");
     div.innerHTML = ` <div class="mt-10">
           <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl p-2">
-            <h1 class="font-bold">${data.name}</h1>
-            <h2 class="font-semibold">${data.num}</h2>
-            <p>${data.date}</p>
+            <h1 class="font-bold">${history.name}</h1>
+            <h2 class="font-semibold">${history.num}</h2>
+            <p>${history.date}</p>
           </div>
         </div>
   
@@ -67,6 +71,27 @@ document.getElementById("call-btn-2").addEventListener("click", function () {
 
   document.getElementById("coins").innerText = availableCoins;
   alert(" You are calling Police Helpline Number 999");
+  const data = {
+    name: "Police Helpline Number",
+    num: 999,
+    date: new Date().toLocaleTimeString(),
+  };
+  callHistory.push(data);
+  const callHistoryData = document.getElementById("call-history-data");
+  callHistoryData.innerText = "";
+  for (const history of callHistory) {
+    const div = document.createElement("div");
+    div.innerHTML = ` <div class="mt-10">
+          <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl p-2">
+            <h1 class="font-bold">${history.name}</h1>
+            <h2 class="font-semibold">${history.num}</h2>
+            <p>${history.date}</p>
+          </div>
+        </div>
+  
+    `;
+    callHistoryData.appendChild(div);
+  }
 });
 // call-btn-3
 document.getElementById("call-btn-3").addEventListener("click", function () {
@@ -81,6 +106,27 @@ document.getElementById("call-btn-3").addEventListener("click", function () {
 
   document.getElementById("coins").innerText = availableCoins;
   alert(" You are calling Fire Service Number 999");
+  const data = {
+    name: "Fire Service Number",
+    num: 999,
+    date: new Date().toLocaleTimeString(),
+  };
+  callHistory.push(data);
+  const callHistoryData = document.getElementById("call-history-data");
+  callHistoryData.innerText = "";
+  for (const history of callHistory) {
+    const div = document.createElement("div");
+    div.innerHTML = ` <div class="mt-10">
+          <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl p-2">
+            <h1 class="font-bold">${history.name}</h1>
+            <h2 class="font-semibold">${history.num}</h2>
+            <p>${history.date}</p>
+          </div>
+        </div>
+  
+    `;
+    callHistoryData.appendChild(div);
+  }
 });
 // call-btn-4
 document.getElementById("call-btn-4").addEventListener("click", function () {
@@ -95,6 +141,27 @@ document.getElementById("call-btn-4").addEventListener("click", function () {
 
   document.getElementById("coins").innerText = availableCoins;
   alert(" You are calling Ambulance Service 1994-999999");
+  const data = {
+    name: "Ambulance Service",
+    num: 1994999999,
+    date: new Date().toLocaleTimeString(),
+  };
+  callHistory.push(data);
+  const callHistoryData = document.getElementById("call-history-data");
+  callHistoryData.innerText = "";
+  for (const history of callHistory) {
+    const div = document.createElement("div");
+    div.innerHTML = ` <div class="mt-10">
+          <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl p-2">
+            <h1 class="font-bold">${history.name}</h1>
+            <h2 class="font-semibold">${history.num}</h2>
+            <p>${history.date}</p>
+          </div>
+        </div>
+  
+    `;
+    callHistoryData.appendChild(div);
+  }
 });
 // call-btn-5
 document.getElementById("call-btn-5").addEventListener("click", function () {
@@ -109,6 +176,27 @@ document.getElementById("call-btn-5").addEventListener("click", function () {
 
   document.getElementById("coins").innerText = availableCoins;
   alert(" You are calling Women & Child Helpline 109");
+  const data = {
+    name: "Women & Child Helpline",
+    num: 109,
+    date: new Date().toLocaleTimeString(),
+  };
+  callHistory.push(data);
+  const callHistoryData = document.getElementById("call-history-data");
+  callHistoryData.innerText = "";
+  for (const history of callHistory) {
+    const div = document.createElement("div");
+    div.innerHTML = ` <div class="mt-10">
+          <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl p-2">
+            <h1 class="font-bold">${history.name}</h1>
+            <h2 class="font-semibold">${history.num}</h2>
+            <p>${history.date}</p>
+          </div>
+        </div>
+  
+    `;
+    callHistoryData.appendChild(div);
+  }
 });
 // call-btn-6
 document.getElementById("call-btn-6").addEventListener("click", function () {
@@ -123,6 +211,27 @@ document.getElementById("call-btn-6").addEventListener("click", function () {
 
   document.getElementById("coins").innerText = availableCoins;
   alert(" You are calling Anti-Corruption Helpline 106");
+  const data = {
+    name: " Anti-Corruption Helpline",
+    num: 106,
+    date: new Date().toLocaleTimeString(),
+  };
+  callHistory.push(data);
+  const callHistoryData = document.getElementById("call-history-data");
+  callHistoryData.innerText = "";
+  for (const history of callHistory) {
+    const div = document.createElement("div");
+    div.innerHTML = ` <div class="mt-10">
+          <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl p-2">
+            <h1 class="font-bold">${history.name}</h1>
+            <h2 class="font-semibold">${history.num}</h2>
+            <p>${history.date}</p>
+          </div>
+        </div>
+  
+    `;
+    callHistoryData.appendChild(div);
+  }
 });
 // call-btn-7
 document.getElementById("call-btn-7").addEventListener("click", function () {
@@ -137,6 +246,27 @@ document.getElementById("call-btn-7").addEventListener("click", function () {
 
   document.getElementById("coins").innerText = availableCoins;
   alert(" You are calling Electricity Helpline 16216");
+  const data = {
+    name: "Electricity Helpline",
+    num: 16216,
+    date: new Date().toLocaleTimeString(),
+  };
+  callHistory.push(data);
+  const callHistoryData = document.getElementById("call-history-data");
+  callHistoryData.innerText = "";
+  for (const history of callHistory) {
+    const div = document.createElement("div");
+    div.innerHTML = ` <div class="mt-10">
+          <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl p-2">
+            <h1 class="font-bold">${history.name}</h1>
+            <h2 class="font-semibold">${history.num}</h2>
+            <p>${history.date}</p>
+          </div>
+        </div>
+  
+    `;
+    callHistoryData.appendChild(div);
+  }
 });
 // call-btn-8
 document.getElementById("call-btn-8").addEventListener("click", function () {
@@ -151,6 +281,27 @@ document.getElementById("call-btn-8").addEventListener("click", function () {
 
   document.getElementById("coins").innerText = availableCoins;
   alert(" You are calling Brac Helpline 16445");
+  const data = {
+    name: "Brac Helpline",
+    num: 16445,
+    date: new Date().toLocaleTimeString(),
+  };
+  callHistory.push(data);
+  const callHistoryData = document.getElementById("call-history-data");
+  callHistoryData.innerText = "";
+  for (const history of callHistory) {
+    const div = document.createElement("div");
+    div.innerHTML = ` <div class="mt-10">
+          <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl p-2">
+            <h1 class="font-bold">${history.name}</h1>
+            <h2 class="font-semibold">${history.num}</h2>
+            <p>${history.date}</p>
+          </div>
+        </div>
+  
+    `;
+    callHistoryData.appendChild(div);
+  }
 });
 // call-btn-9
 document.getElementById("call-btn-9").addEventListener("click", function () {
@@ -166,30 +317,44 @@ document.getElementById("call-btn-9").addEventListener("click", function () {
 
   document.getElementById("coins").innerText = availableCoins;
   alert(" You are calling Bangladesh Railway Helpline 163");
+  const data = {
+    name: "Bangladesh Railway Helpline",
+    num: 163,
+    date: new Date().toLocaleTimeString(),
+  };
+  callHistory.push(data);
+  const callHistoryData = document.getElementById("call-history-data");
+  callHistoryData.innerText = "";
+  for (const history of callHistory) {
+    const div = document.createElement("div");
+    div.innerHTML = ` <div class="mt-10">
+          <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl p-2">
+            <h1 class="font-bold">${history.name}</h1>
+            <h2 class="font-semibold">${history.num}</h2>
+            <p>${history.date}</p>
+          </div>
+        </div>
+  
+    `;
+    callHistoryData.appendChild(div);
+  }
 });
 
 // copy and count
 
-// 1. Select all elements with the class 'copy-btn'
 const copyButtons = document.querySelectorAll(".copy-btn");
 
-// 2. Loop through each button and add a click event listener
 copyButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    // 3. Get the ID of the text element from the button's data attribute
     const targetId = button.getAttribute("data-target");
     const textElement = document.getElementById(targetId);
 
-    // 4. Check if the element exists
     if (textElement) {
-      // 5. Get the text content
       const text = textElement.textContent;
 
-      // 6. Use the modern Clipboard API to copy the text
       navigator.clipboard
         .writeText(text)
         .then(() => {
-          // 7. Optional: Provide user feedback
           alert("Hotline number copied to clipboard!");
         })
         .catch((err) => {
@@ -210,3 +375,11 @@ for (const count of copyCount) {
     copyCountElement.textContent = currentCopyCount;
   });
 }
+
+// clear history
+
+document.getElementById("clear-btn").addEventListener("click", function () {
+  const callHistoryData = document.getElementById("call-history-data");
+  callHistoryData.innerText = "";
+  callHistory = [];
+});

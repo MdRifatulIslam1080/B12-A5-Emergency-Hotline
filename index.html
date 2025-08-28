@@ -421,7 +421,10 @@
         </div>
       </div>
       <!-- call history -->
-      <div id="call-history-data" class="bg-white rounded-[16px] shadow-md p-5">
+      <div
+        id="call-history-parent"
+        class="bg-white rounded-[16px] shadow-md p-5"
+      >
         <div class="flex justify-between">
           <div class="flex gap-2 mt-2">
             <i class="fa-regular fa-clock mt-1"></i>
@@ -429,12 +432,14 @@
           </div>
           <div class="">
             <button
+              id="clear-btn"
               class="w-[94px] h-[42px] bg-[#00A63E] text-white rounded-[50px] hover:bg-gray-400"
             >
               Clear
             </button>
           </div>
         </div>
+        <div id="call-history-data"></div>
       </div>
     </section>
     <script src="./js/script.js"></script>
